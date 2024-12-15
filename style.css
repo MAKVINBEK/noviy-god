@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #001d4a, #004e92);
+    color: white;
+    font-family: "Arial", sans-serif;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 15px #ff7700, 0 0 25px #ffaa00, 0 0 40px #ffcc00;
+  }
+  
+  .countdown {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    background: linear-gradient(145deg, #222 40%, #444 60%);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6),
+      inset 0 1px 4px rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    color: #ffaa00;
+    text-shadow: 0 0 10px #ffcc00, 0 0 20px #ffdd55;
+  }
+  
+  .time div {
+    font-size: 3em;
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(145deg, #f6f6f6, #ffffff);
+    -webkit-background-clip: text;
+    text-shadow: 0 0 15px #ff7700, 0 0 30px #ffaa00, 0 0 45px #ffcc00;
+  }
+  
+  .time span {
+    font-size: 1em;
+    margin-top: 5px;
+    text-transform: uppercase;
+    color: #eee;
+    text-shadow: 0 0 10px #444, 0 0 15px #777;
+  }
+  
+  .star {
+    position: absolute;
+    background: #fff;
+    border-radius: 50%;
+    animation: sparkle 5s infinite ease-in-out;
+  }
+  
+  @keyframes sparkle {
+    0%,
+    100% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+  
+    50% {
+      opacity: 1;
+      transform: scale(1.2);
+    }
+  }

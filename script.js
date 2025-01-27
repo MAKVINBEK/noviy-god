@@ -1,6 +1,6 @@
 const countdown = () => {
     const now = new Date().getTime();
-    const newYear = new Date("December 31, 2024 23:59:59").getTime();
+    const newYear = new Date("December 31, 2025 23:59:59").getTime();
     const timeLeft = newYear - now;
   
     const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
